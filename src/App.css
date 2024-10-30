@@ -1,0 +1,18 @@
+:root{
+
+  /*fonts var*/
+  --font-title: "Raleway", sans-serif;
+  --font-text: "Montserrat", sans-serif;
+
+  /*color var*/
+  --color-grey: #969696 ;
+  --color-white: #FAF9F6; 
+  --color-dark: #222222;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}

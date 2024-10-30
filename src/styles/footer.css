@@ -1,0 +1,106 @@
+/*component container*/
+.footer{
+    min-height: 40svh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 5rem;
+    background: var(--color-white);
+}
+
+/*logo and navbar container*/
+.logo-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;    
+}
+
+/*navbar container*/
+.logo-navbar .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 4rem;
+    padding-right: 7rem;
+}
+
+/*links*/
+.logo-navbar .navbar a{
+    font-family: var(--font-text);
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*logo container*/
+.logo-navbar .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+/*logo image*/
+.logo-navbar .logo img{
+    width: 100px;
+    height: auto;
+}
+
+/*brand*/
+.logo-navbar .logo h2{
+    font-family: var(--font-title);
+    font-size: 5rem;
+    font-weight: 400;
+} 
+
+/*copyright and instagram link container*/
+.ig-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/*link*/
+.ig-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-dark);
+}
+
+/*botton arrow*/
+.ig-link img{
+    width: 30px;
+    height: auto;
+}
+
+/*copyright*/
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.copyright p{
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.copyright p a{
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+

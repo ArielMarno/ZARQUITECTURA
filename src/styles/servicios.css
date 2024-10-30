@@ -1,0 +1,287 @@
+/*component container*/
+.servicios{
+    min-height: 100svh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("/servicios-bg.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 5rem;
+    color: var(--color-white);
+}
+
+/*content container*/
+.servicios section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*title container*/
+.servicios .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 0;
+    padding-bottom: 2rem;
+
+}
+
+/*title*/
+.servicios .title h2{
+    font-family: var(--font-title);
+    font-size: 4rem;
+    line-height: 37px;
+    font-weight: 400;
+}
+
+/*subtitle*/
+.servicios .title p{
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+/*services container*/
+.servicios .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.content .item:last-child{
+  border-bottom: 2px solid var(--color-white);
+  padding-bottom: 1rem;
+}
+
+/*name and button container*/
+.service-name{
+    width: 870px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid var(--color-white);
+}
+
+/*plus button*/ 
+.wrapper {
+  --width: 90px;
+  --height: 90px;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+}
+.wrapper .btn {
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: plus-animation-reverse 0.5s ease-out forwards;
+  animation: plus-animation-reverse 0.5s ease-out forwards;
+}
+.wrapper .btn::before,
+.wrapper .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--color-grey);
+}
+.wrapper .btn::before {
+  width: 4px;
+  height: 28px;
+}
+.wrapper .btn::after {
+  width: 28px;
+  height: 4px;
+}
+
+.wrapper input {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+}
+
+.wrapper input:checked ~ .btn {
+  -webkit-animation: plus-animation 0.5s ease-out forwards;
+  animation: plus-animation 0.5s ease-out forwards;
+}
+
+
+@-webkit-keyframes pang-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes pang-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes plus-animation {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    transform: rotate(60deg) scale(0.93);
+  }
+  55% {
+    transform: rotate(35deg) scale(0.97);
+  }
+  80% {
+    transform: rotate(48deg) scale(0.94);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}
+@keyframes plus-animation {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    transform: rotate(60deg) scale(0.93);
+  }
+  55% {
+    transform: rotate(35deg) scale(0.97);
+  }
+  80% {
+    transform: rotate(48deg) scale(0.94);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}
+@-webkit-keyframes plus-animation-reverse {
+  0% {
+    transform: rotate(45deg) scale(0.95);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  55% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+@keyframes plus-animation-reverse {
+  0% {
+    transform: rotate(45deg) scale(0.95);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  55% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+@-webkit-keyframes stretch-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes stretch-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+.service-name h3{
+  font-family: var(--font-text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  justify-self: flex-start;
+}
+
+.content p{
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-grey);
+    max-width: 700px;
+}
+
+/*image container*/
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.image-container{
+    max-width: 500px;
+    height: auto;
+}
+
+/*image*/
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
