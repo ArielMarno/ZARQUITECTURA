@@ -26,12 +26,12 @@ const Servicios = () => {
     <div className='servicios' id="servicios">
       <section>
         <div className='title'>
-              <h2>SERVICIOS</h2>
-              <p>INNOVACIÓN EN CADA DETALLE, VALOR EN CADA PROYECTO</p>
+              <h2 data-aos="fade-up">SERVICIOS</h2>
+              <p data-aos="fade-up">INNOVACIÓN EN CADA DETALLE, VALOR EN CADA PROYECTO</p>
           </div>
           <div className='content'>
                   {services.map((service) => (
-                <div className="item" key={service.id}>
+                <div data-aos="fade-up" className="item" key={service.id}>
                   <div className="service-name">
                     <h3>{service.name}</h3>
                     <div className="wrapper">
@@ -46,7 +46,7 @@ const Servicios = () => {
       </section>
       <aside>
         <div className="image-container">
-          <img src={edificio} alt="edificio" />
+          <img data-aos="fade-up" src={edificio} alt="edificio" />
         </div>
       </aside>
         

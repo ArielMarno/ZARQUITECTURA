@@ -27,7 +27,7 @@ const Proyectos = () => {
   return (
     <div className='proyectos' id="proyectos">
         <div className='title'>
-            <h2>PROYECTOS</h2>
+            <h2 data-aos="fade-up">PROYECTOS</h2>
         </div>
         <div className='grid-container'>
             {galeria.map((gallery) => (
