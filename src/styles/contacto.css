@@ -107,7 +107,7 @@ form button img{
 /*title*/
 .contact-content h2{
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 1.5495rem + 1.9802vw, 4rem);
     font-weight: 400;
     color: var(--color-white);
 }
@@ -116,7 +116,7 @@ form button img{
 .contact-content p{
     max-width: 540px;
     font-family: var(--font-text);
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 0.8099rem + 0.396vw, 1.3rem);
     font-weight: 500;
     color: var(--color-white);
     margin-top: 2rem;
@@ -148,13 +148,13 @@ form button img{
 .icon h4{
     font-family: var(--font-title);
     color: var(--color-grey);
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 0.7733rem + 0.264vw, 1.1rem);
     font-weight: 500;
 }
 
 .icon p{
     margin: 0;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.6733rem + 0.264vw, 1rem);
 }
 
 /*map container*/
@@ -169,4 +169,99 @@ form button img{
     height: 100%;
     object-fit: cover;
     border: none;
+}
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .contacto{
+        padding: 3rem 4rem;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1150px){
+
+    .contacto{
+        padding: 3rem;
+    }
+
+    .contact-main{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .contacto{
+        padding: 3rem 1rem;
+    }
+
+    /*form*/
+    form{
+        padding-top: 3rem;
+        width: 430px;
+    }
+
+    form textarea{
+        max-width: 430px;
+        min-width: 430px;
+        width: 430px;
+    }
+
+    .contact-content h2{
+        padding-top: 2rem;
+    }
+
+    /*text*/
+    .contact-content p{
+        max-width: 430px;
+    }
+
+    /*map container*/
+    .contact-map{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    .contacto{
+        padding: 3rem 0.5rem;
+    }
+
+    .contact-content h2{
+        font-size: 2.4rem;
+    }
+
+    /*text*/
+    .contact-content p{
+        max-width: 90%;
+    }
+
+    /*form*/
+    form{
+        padding-top: 3rem;
+        width: 330px;
+    }
+
+    form textarea{
+        max-width: 330px;
+        min-width: 330px;
+        width: 330px;
+    }
+
+    /*map container*/
+    .contact-map{
+        width: 100%;
+        height: 300px;
+    }
 }

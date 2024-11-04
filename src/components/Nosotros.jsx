@@ -12,15 +12,20 @@ const Nosotros = () => {
         </div>
         <div className="nosotros_main">
             <div className="contact">
-                <a href="https://wa.link/w4olxx" data-aos="fade-up">CONTACTO <img src={arrow} alt="flecha" /></a>
+                <a href="https://wa.link/w4olxx" data-aos="fade-down">CONTACTO <img src={arrow} alt="flecha" /></a>
                 <div className="contact_img">
                     <img data-aos="fade-up" src={zaq} alt="logo" />
                 </div>
+                <p className="responsive-text" data-aos="fade-down">Nos dedicamos al diseño arquitectónico y desarrollos inmobiliarios, creando soluciones innovadoras y eficientes que se adaptan a las necesidades de nuestros clientes.</p>
+                <a className="responsive-btn" href="https://wa.link/w4olxx">CONTACTO <img src={arrow} alt="flecha" /></a>
             </div>
             <div className="content">
-                <p data-aos="fade-down">Nos dedicamos al diseño arquitectónico y desarrollos inmobiliarios, creando soluciones innovadoras y eficientes que se adaptan a las necesidades de nuestros clientes.</p>
+                <p data-aos="fade-down" className="destock-text">Nos dedicamos al diseño arquitectónico y desarrollos inmobiliarios, creando soluciones innovadoras y eficientes que se adaptan a las necesidades de nuestros clientes.</p>
                 <div className="content_bottom">
-                    <p data-aos="fade-up">Nuestro enfoque integral, desde la planificación hasta la ejecución, asegura resultados de alta calidad, optimizando cada etapa del proyecto.</p>
+                    <div content_bottom-container>
+                        <p data-aos="fade-up">Nuestro enfoque integral, desde la planificación hasta la ejecución, asegura resultados de alta calidad, optimizando cada etapa del proyecto.</p>
+                    </div>
+                    
                     <div className="content_img">
                         <img data-aos="fade-up" src={angle} alt="edificio" />
                     </div>

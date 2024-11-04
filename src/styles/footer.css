@@ -4,6 +4,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     padding: 3rem 5rem;
     background: var(--color-white);
 }
@@ -21,9 +22,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
-    gap: 4rem;
-    padding-right: 7rem;
+    justify-content: flex-start;
+    gap: 3vw;
+    padding-left: 5vw;
 }
 
 /*links*/
@@ -31,7 +32,7 @@
     font-family: var(--font-text);
     text-decoration: none;
     color: var(--color-dark);
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 0.7099rem + 0.396vw, 1.2rem);
     font-weight: 500;
 }
 
@@ -53,7 +54,7 @@
 /*brand*/
 .logo-navbar .logo h2{
     font-family: var(--font-title);
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 0.9158rem + 3.3003vw, 5rem);
     font-weight: 400;
 } 
 
@@ -73,7 +74,7 @@
     justify-content: center;
     font-family: var(--font-title);
     color: var(--color-dark);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.6832rem + 0.6601vw, 1.5rem);
     font-weight: 600;
     text-decoration: none;
     border-bottom: 2px solid var(--color-dark);
@@ -100,7 +101,100 @@
 
 .copyright p a{
     color: var(--color-dark);
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
 
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .footer{
+        padding: 3rem;
+    }
+
+    /*navbar container*/
+    .logo-navbar .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1vw;
+    }
+
+    /*logo image*/
+    .logo-navbar .logo img{
+        width: 70px;
+        height: auto;
+    }
+
+    /*botton arrow*/
+    .ig-link img{
+        width: 25px;
+        height: auto;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+    
+    .footer{
+        padding: 3rem 2rem;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 0.5rem;
+    }
+    
+    /*logo image*/
+    .logo-navbar .logo img{
+        width: 60px;
+        height: auto;
+    }
+
+    .ig-copy{
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    /*botton arrow*/
+    .ig-link img{
+        width: 20px;
+        height: auto;
+    }
+
+    /*copyright*/
+    .copyright{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+    .footer{
+        padding: 3rem 1rem;
+    }
+
+    .logo-navbar .navbar{
+        display: none;
+    }
+
+    /*logo image*/
+    .logo-navbar .logo img{
+        width: 50px;
+        height: auto;
+    }
+
+    .logo-navbar .logo h2{
+        font-size: clamp(1.7rem, 0.9165rem + 3.299vw, 2.5rem);
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+}

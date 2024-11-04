@@ -15,7 +15,7 @@ const Inicio = () => {
   return (
     <div className="inicio">
         <div className='navbar'>
-                <img src={logo} alt="logo" />
+                <a href="#"><img src={logo} alt="logo" /></a>
             <nav className={`links ${click ? 'active' : ''}`}>
                 <a href="#nosotros">NOSOTROS</a>
                 <a href="#servicios">SERVICIOS</a>

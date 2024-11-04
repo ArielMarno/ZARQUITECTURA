@@ -46,14 +46,14 @@ nav{
     display: none;
 }
 
-/*titulo*/
+/*title*/
 .title{
     padding: 1rem 5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -62,21 +62,18 @@ nav{
 .inicio .title h1{
     font-family: var(--font-title);
     color: var(--color-white);
-    line-height: 160px;
-    font-size: 13rem;
+    line-height: 0.7em;
+    font-size: clamp(5rem, -0.3861rem + 11.2211vw, 13.5rem);
     font-weight: 200;
     padding-top: 15rem;
 }
 
-/*subtitulo*/
+/*subtitle*/
 .inicio .title p{
-    align-self: flex-start;
     font-family: var(--font-text);
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 0.7198rem + 0.7921vw, 1.7rem);
     font-weight: 600;
-    margin-left: 1.5rem;
-
 }
 
 /*fixed whatsapp button*/
@@ -157,8 +154,6 @@ nav{
   
 
 
-
-
 @-webkit-keyframes text-focus-in {
     0% {
       -webkit-filter: blur(12px);
@@ -191,11 +186,17 @@ nav{
 
 /*DESTOCKS*/
 @media only screen and (max-width:1440px){
-
+  .title{
+    padding: 1rem 4rem;
+  }
 }
 
 /*NOTEBOOKS*/
 @media only screen and (max-width:1023px){
+
+    .title{
+      padding: 1rem 3rem;
+    }
 
     /*barra navegación*/
     .navbar{
@@ -220,10 +221,78 @@ nav{
 
 /*TABLETS*/
 @media only screen and (max-width:768px){
-    
+
+    /*title*/
+    .title{
+      padding: 0 5vw;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .inicio .title h1{
+      font-size: clamp(2.5rem, 0.0515rem + 10.3093vw, 5rem);
+      font-weight: 300;
+      padding-top:45vh;
+    }
+
+    /*subtitle*/
+    .inicio .title p{
+      font-size: clamp(0.9rem, 0.8021rem + 0.4124vw, 1rem);
+      font-weight: 500;
+    }
+
+
+    .navbar{
+        padding: 1rem;
+        position: fixed;
+        z-index: 9;
+        background-color: var(--color-dark);
+        box-shadow: none;
+    }
+
+    .links{
+        position: absolute;
+        top: -700px;
+        right: -2000px;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+    .links.active{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+        gap: 0.2rem;
+        position: fixed;
+        top: 10svh;
+        right: 0;
+        background-color: var(--color-dark);
+    }
+
+    .links.active a{
+      color: var(--color-white);
+      font-weight: 600;
+      padding: 1rem;
+    }
+
+      
+    .burguer{
+        display: flex;
+    }
 }
 
 /*SMARTH PHONES*/
 @media only screen and (max-width:480px){
 
+  .navbar{
+    padding: 0.5rem;
+  }
+
+   /*logo*/
+   .navbar img{
+    width: 50px;
+    height: auto;
+}
 }

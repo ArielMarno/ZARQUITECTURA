@@ -27,7 +27,7 @@ const Servicios = () => {
       <section>
         <div className='title'>
               <h2 data-aos="fade-up">SERVICIOS</h2>
-              <p data-aos="fade-up">INNOVACIÓN EN CADA DETALLE, VALOR EN CADA PROYECTO</p>
+              <p data-aos="fade-up">INNOVACIÓN EN CADA DETALLE, <br />VALOR EN CADA PROYECTO.</p>
           </div>
           <div className='content'>
                   {services.map((service) => (

@@ -1,9 +1,13 @@
 /*componente*/
 .nosotros{
-    min-height: 100svh;
+    min-height: auto;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
     background-color: var(--color-white);
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 /*titulo*/
@@ -11,7 +15,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: flex-start;
+    padding-bottom: 3rem;
 }
 
 .nosotros .title h2{
@@ -27,7 +33,7 @@
     display: flex;
     flex-direction: row;
     gap: 5vw;
-    padding: 3rem 5rem;
+    padding: 0 5rem;
 }
 
 /*boton de contacto e imagen*/
@@ -35,7 +41,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 5rem;
+    gap: 5vw;
 }
 
 /*boton*/
@@ -44,7 +50,7 @@
     flex-direction: row;
     align-items: center;
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.0099rem + 0.396vw, 1.5rem);
     font-weight: 700;
     color: var(--color-dark);
     text-decoration: none;
@@ -58,7 +64,7 @@
     height: auto;
 }
 
-/*imagen*/
+/*imagen(logo)*/
 .contact_img{
     max-width: 500px;
     height: auto;
@@ -70,6 +76,7 @@
     object-fit: cover;
 }
 
+/*contenedor con textos e imagen de edificio*/
 .nosotros_main .content{
     display: flex;
     flex-direction: column;
@@ -77,26 +84,29 @@
     justify-content: space-between;
 }
 
+/*textos*/
 .nosotros_main .content p{
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 0.7667rem + 0.5926vw, 1.5rem);
     font-weight: 500;
     color: var(--color-dark);
     max-width: 800px;
 }
 
+/*contenedor inferior(imagen y texto)*/
 .content_bottom{
     justify-self: flex-end;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 5vw;
 }
 
 .nosotros_main .content_bottom p{
     max-width: 400px;
 }
 
+/*imagen edificio*/
 .content_img{
     max-width: 350px;
     height: auto;
@@ -106,4 +116,134 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*texto y boton ocultos (responsive)*/
+.nosotros_main .contact .responsive-btn, .responsive-text{
+    display: none;
+}
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .nosotros_main{
+        justify-content: center;
+        padding: 0 4rem;
+    }
+
+    .nosotros .title{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nosotros_main .contact{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+
+    .nosotros_main .content_bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    /*ocultar texto y boton (destock)*/
+    .nosotros_main .contact a, .destock-text{
+        display: none;
+    }
+
+    /*darle visibilidad a texto y boton responsive*/
+    .responsive-text, .nosotros_main 
+    .contact .responsive-btn{
+        display: flex;
+        text-align: right;
+    }
+
+    .responsive-text, .nosotros_main .content_bottom p{
+        font-family: var(--font-text);
+        font-size: clamp(1.1rem, 0.8708rem + 0.4769vw, 1.3rem);
+        font-weight: 500;
+        color: var(--color-dark);
+        max-width: 500px;
+    }
+    
+    .nosotros_main .contact .responsive-btn{
+        max-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: var(--font-title);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        text-decoration: none;
+        border-bottom: 3px solid var(--color-dark);
+        padding: 0;
+    }
+
+    .nosotros_main .contact .responsive-btn img{
+        width: 25px;
+        height: auto;
+    }
+
+    .nosotros_main .content p{
+        max-width: 350px;
+    }
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .nosotros_main{
+        padding: 0 3rem;
+    }
+
+    .nosotros .title h2{
+        font-size: 3.5rem;
+    }
+
+    .responsive-text, .nosotros_main .content_bottom p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+    .nosotros_main{
+        padding: 0 1rem;
+    }
+
+    .nosotros .title h2{
+        font-size: 3rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    
+    .nosotros_main{
+        padding: 0 0.5rem;
+    }
+
+    .nosotros .title h2{
+        font-size: 2.4rem;
+    }
+
+    .responsive-text, .nosotros_main .content_bottom p{
+        font-size: 0.8rem;
+    }
+
+    .nosotros_main .contact .responsive-btn{
+        font-size: 1rem;
+        font-weight: 700;
+        border-bottom: 2px solid var(--color-dark);
+    }
 }

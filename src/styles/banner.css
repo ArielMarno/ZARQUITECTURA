@@ -19,21 +19,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2.5vh;
 }
 
 .banner-card h4{
     font-family: var(--font-title);
-    font-size: 3rem;
+    font-size: clamp(2rem, 1.3663rem + 1.3201vw, 3rem);
     font-weight: 600;
     color: var(--color-white);
 }
 
 .banner-card p{
-    max-width: 55%;
+    max-width: 50%;
     text-align: center;
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.0099rem + 0.396vw, 1.5rem);
     font-weight: 500;
     color: var(--color-white);
 }
@@ -42,13 +42,14 @@
     background: var(--color-dark);
     padding: 1rem;
 }
+
 .banner-card a{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
     font-family: var(--font-title);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 0.8733rem + 0.264vw, 1.2rem);
     font-weight: 500;
     color: var(--color-white);
     text-decoration: none;
@@ -58,4 +59,82 @@
 .banner-card a img{
     width: 13px;
     height: auto;
+}
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .banner{
+        padding: 3rem 4rem;
+    }
+
+    .banner-card p{
+        max-width: 65%;
+    }
+
+    .banner-card a img{
+        width: 11px;
+        height: auto;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .banner{
+        min-height: 50vh;
+        padding: 3rem;
+    }
+    .banner-card p{
+        max-width: 80%;
+        font-size: 1.1rem
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .banner{
+        padding: 1rem;
+    }
+
+    .banner-card h4{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .banner-card p{
+        max-width: 95%;
+        font-size: 1rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    .banner{
+        padding: 0.5rem;
+    }
+
+    .banner-card h4{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .banner-card p{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .banner-card a{
+        font-size: 0.8rem;
+    }
+    .banner-card a img{
+        width: 10px;
+        height: auto;
+    }
+
 }
