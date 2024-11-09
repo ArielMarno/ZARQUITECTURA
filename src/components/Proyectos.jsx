@@ -19,7 +19,7 @@ const galeria= [
     { id: 5, image: p5, name: 'RESIDENCIA H-5', description: 'cocina 130m2- 2 pisos estructura hormigón armado con ladrillos hueco' },
     { id: 6, image: p6, name: 'RESIDENCIA B-10', description: 'living - 150m2 - 1 piso estructura de hormigón armado con ladrillos huecos' },
     { id: 7, image: p7, name: 'DEPARTAMENTOS', description: '1500m2 - 4 pisos estructura de hormigón armado' },
-    { id: 8, image: p8, name: 'HOTEL', description: '330m2 - 5 pisos con estructura metálica' },
+    { id: 8, image: p8, name: 'HOTEL', description: '3300m2 - 5 pisos con estructura metálica' },
     { id: 9, image: p9, name: 'PARQUE INDUSTRIAL', description: '8879m2 - 2 pisos estructura metálica con paneles siding' }
   ];
 
