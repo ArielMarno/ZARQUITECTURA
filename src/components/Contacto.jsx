@@ -1,3 +1,4 @@
+import {React, useState} from 'react';
 import '../styles/contacto.css';
 
 import phone from '../assets/icons/telefono.webp';
@@ -8,18 +9,40 @@ import ubi from '../assets/icons/ubicacion.webp';
 import arrow from '../assets/arrow-w.webp';
 
 const Contacto = () => {
+
+     // Estado para almacenar los datos del formulario
+     const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        service: '',
+      });
+    
+      // Manejar cambios en los inputs
+      const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+
   return (
     <div className='contacto' id='contacto'>
         <div className='contact-main'>
-            <form data-aos="fade-up" >
+            <form data-aos="fade-up" action="https://formspree.io/f/xdkozkry" method="POST">
                 <label htmlFor="nombre">NOMBRE</label>
-                <input type="text" placeholder='Tu nombre'/>
+                <input type="text" name='nombre' id='nombre' value={formData.nombre} placeholder='Tu nombre' autoComplete="off"
+                  onChange={handleInputChange}
+                  required/>
                 <label htmlFor="correo">EMAIL</label>
-                <input type="text" placeholder='ejemplo@tuemail.com' />
+                <input type="text" name='email' id='email' value={formData.email} placeholder='ejemplo@tuemail.com' autoComplete="off"
+                  onChange={handleInputChange}
+                  required/>
                 <label htmlFor="telefono">TELÉFONO</label>
-                <input type="text"  placeholder='Número de teléfono'/>
+                <input type="text" name='telefono' id='telefono' value={formData.telefono} placeholder='Número de teléfono' autoComplete="off"
+                  onChange={handleInputChange}
+                  required/>
                 <label htmlFor="mensaje">MENSAJE</label>
-                <textarea name="mensaje" id="mensaje" placeholder='Escribí tu consulta aquí'></textarea>
+                <textarea name="mensaje" id="mensaje" value={formData.mensaje} placeholder='Escribí tu consulta aquí' autoComplete="off"
+                  onChange={handleInputChange}
+                  required></textarea>
                 <button type='submit'>ENVIAR <img src={arrow} alt="flecha" /></button>
             </form>
             <div className='contact-content'>

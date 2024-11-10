@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <div className='logo'>
                 <img src={logo} alt="logo" />
-                <h2>ZARQUITECTURA</h2>
+                <a href=""><h2>ZARQUITECTURA</h2></a>
             </div>
         </div>
         <div className='ig-copy'>

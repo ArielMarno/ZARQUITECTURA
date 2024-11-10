@@ -254,7 +254,7 @@
   }
 }
 
-
+/*nombre del servicio*/
 .service-name h3{
   font-family: var(--font-text);
   font-size: clamp(1.2rem, 0.4rem + 0.8889vw, 1.5rem);
@@ -262,6 +262,7 @@
   justify-self: flex-start;
 }
 
+/*descripción*/
 .content p{
     font-family: var(--font-text);
     font-size: clamp(1rem, 0.4667rem + 0.5926vw, 1.2rem);
@@ -276,11 +277,10 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
 }
 
 .image-container{
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
 }
 
