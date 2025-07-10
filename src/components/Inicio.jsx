@@ -1,29 +1,34 @@
-import { React, useState} from 'react';
 import "../styles/inicio.css";
+import React, { useState } from 'react';
 import logo from "../assets/logo.webp";
 import Burguer from './Burguer';
 
 const Inicio = () => {
 
-  const[click, setClick] = useState(false);
-  const handleClick = () =>{
-  //setear el booleano opuesto al actual cuando se hace click en el boton
-  setClick(!click);
-  }
+  //establecer el opuesto cuando se identifica si esta abierto el menu
+    const [isOpen, setIsOpen] = useState(false);
+      const toggleMenu = () => {
+            setIsOpen(!isOpen);
+        };
+        
+    //booleano para apertura y cierre del menu desplegable al hacer click en los links del navegador
+    const handleLinkClick = () => {
+      setIsOpen(false);
+    };
 
 
   return (
     <div className="inicio">
         <div className='navbar'>
                 <a href="#"><img src={logo} alt="logo" /></a>
-            <nav className={`links ${click ? 'active' : ''}`}>
-                <a href="#nosotros">NOSOTROS</a>
-                <a href="#servicios">SERVICIOS</a>
-                <a href="#proyectos">PROYECTOS</a>
-                <a href="#contacto">CONTACTO</a>
+            <nav className={`links ${isOpen ? 'open' : ''}`}>
+                <a href="#nosotros" onClick={handleLinkClick}>NOSOTROS</a>
+                <a href="#servicios" onClick={handleLinkClick}>SERVICIOS</a>
+                <a href="#proyectos" onClick={handleLinkClick}>PROYECTOS</a>
+                <a href="#contacto" onClick={handleLinkClick}>CONTACTO</a>
             </nav>
             <div className="burguer">
-                <Burguer handleClick={handleClick}/> 
+                <Burguer toggleMenu={toggleMenu} isOpen={isOpen}/> 
             </div>
         </div>
         <div className="title">

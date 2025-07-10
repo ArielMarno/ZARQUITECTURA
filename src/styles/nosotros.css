@@ -87,10 +87,10 @@
 /*textos*/
 .nosotros_main .content p{
     font-family: var(--font-text);
-    font-size: clamp(1.3rem, 0.7667rem + 0.5926vw, 1.5rem);
+    font-size: clamp(1.2rem, 0.6rem + 0.6667vw, 1.4rem);
     font-weight: 500;
     color: var(--color-dark);
-    max-width: 800px;
+    max-width: 880px;
 }
 
 /*contenedor inferior(imagen y texto)*/
@@ -103,12 +103,13 @@
 }
 
 .nosotros_main .content_bottom p{
-    max-width: 400px;
+    max-width: 450px;
 }
 
 /*imagen edificio*/
 .content_img{
     max-width: 350px;
+    min-height: 220px;
     height: auto;
 }
 
@@ -165,7 +166,7 @@
 
     .responsive-text, .nosotros_main .content_bottom p{
         font-family: var(--font-text);
-        font-size: clamp(1.1rem, 0.8708rem + 0.4769vw, 1.3rem);
+        font-size: clamp(1.1rem, 0.8547rem + 0.3837vw, 1.2rem);
         font-weight: 500;
         color: var(--color-dark);
         max-width: 500px;

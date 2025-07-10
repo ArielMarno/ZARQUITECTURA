@@ -73,7 +73,7 @@ const Contacto = () => {
             </div>
         </div>
         <div className='contact-map'>
-            <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3688171185095!2d-68.83287952369727!3d-32.88841567361728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e092312ca1b4b%3A0x33480ba7406f70d6!2sPedro%20B.%20Palacios%201354%2C%20M5502%20Mendoza!5e0!3m2!1ses!2sar!4v1730164334969!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4029.7296033638577!2d-68.8242743!3d-32.9144079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095097de9a85%3A0x5d63cc2efae8b1c1!2sLa%20Barraca%20Mall!5e1!3m2!1ses!2sar!4v1752174564382!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
             </div>
     </div>
   )

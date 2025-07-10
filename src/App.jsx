@@ -11,9 +11,9 @@ function App() {
   return (
     <>
      <Inicio />
+     <Proyectos />
      <Nosotros />
      <Servicios />
-     <Proyectos />
      <Banner />
      <Contacto />
      <Footer />

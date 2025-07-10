@@ -12,15 +12,15 @@ import p9 from "../assets/grilla/galeria9.webp";
 
 
 const galeria= [
-    { id: 1, image: p1, name: 'RESIDENCIA H-10', description: '2 pisos - 170m2 - estructura metálica con paneles SIP' },
-    { id: 2, image: p2, name: 'RESIDENCIA H-1', description: '2 pisos - 210m2 - estructura dormido armado con mampostería' },
-    { id: 3, image: p3, name: 'RESIDENCIA B-1', description: '2pisos -170m2- estructura metálica con paneles SIP y revestimiento con siding blanco' },
-    { id: 4, image: p4, name: 'RESIDENCIA B-10', description: 'Living 140m2 - 1 piso estructura de hormigón con mampostería' },
-    { id: 5, image: p5, name: 'RESIDENCIA H-5', description: 'cocina 130m2- 2 pisos estructura hormigón armado con ladrillos hueco' },
-    { id: 6, image: p6, name: 'RESIDENCIA B-10', description: 'living - 150m2 - 1 piso estructura de hormigón armado con ladrillos huecos' },
-    { id: 7, image: p7, name: 'DEPARTAMENTOS', description: '1500m2 - 4 pisos estructura de hormigón armado' },
-    { id: 8, image: p8, name: 'HOTEL', description: '3300m2 - 5 pisos con estructura metálica' },
-    { id: 9, image: p9, name: 'PARQUE INDUSTRIAL', description: '8879m2 - 2 pisos estructura metálica con paneles siding' }
+    { id: 1, image: p1, name: 'Senda 14', description: '230m2 - Volúmenes simples que generan un patio lateral como espacio de transición. El ingreso está definido por planos ciegos y vegetación baja, creando privacidad. La fachada mezcla revestimientos chapa oxidada y texturas suaves que acompañan la luz natural sin sobresalir.' },
+    { id: 2, image: p2, name: 'Loma Haus', description: '480m2 - El ingreso se protege mediante un retranqueo que crea sombra y profundidad. La fachada presenta una apertura mínima hacia la calle y se abre progresivamente hacia el interior. Iluminación cálida y vegetación puntual suavizan los límites construidos.' },
+    { id: 3, image: p3, name: 'Prisma', description: '460m2 - Frente abierto y controlado. La casa se eleva ligeramente sobre el terreno, con una entrada directa enmarcada por planos horizontales. Materiales claros y vegetación rastrera refuerzan la horizontalidad del conjunto.' },
+    { id: 4, image: p4, name: 'Loma Haus', description: '480m2 - Patio lateral de doble altura donde ingresa la vegetación hacia los distintos espacios.' },
+    { id: 5, image: p5, name: 'NOMAD', description: '272m2 - Fachada que refleja la luz del día filtrada por árboles y cielo. La arquitectura dialoga con el entorno inmediato a través de luz y sombra.' },
+    { id: 6, image: p6, name: 'Loma Haus', description: '480m2 - Vista posterior donde los distintos espacios se abren hacia el patio donde se remata con la piscina.' },
+    { id: 7, image: p7, name: 'ALTARIA', description: '785m2 - Edificio en terrazas que permite visuales abiertas y relación directa con el exterior. Cada unidad cuenta con balcones ajardinados que rompen la rigidez del volumen. Predominan materiales robustos como hormigón, hierro y vegetación integrada.' },
+    { id: 8, image: p8, name: 'CORTEN', description: '250m2 - Composición de volúmenes puros y sobrios con estética brutalista refinada. El cuerpo principal en hormigón visto transmite solidez y atemporalidad. La entrada vertical se destaca con un portón de madera de doble altura y un paño vidriado que aporta luz y calidez al interior.' },
+    { id: 9, image: p9, name: 'VELINTON', description: '820m2 - Departamentos con circulación central abierta. Las unidades se agrupan en torno a vacíos verticales que permiten luz y ventilación cruzada. El sistema estructural se manifiesta con concreto expuesto y celosías metálicas.' }
   ];
 
 const Proyectos = () => {

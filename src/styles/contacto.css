@@ -234,9 +234,6 @@ form button img{
 /*SMARTH PHONES*/
 @media only screen and (max-width:480px){
 
-    .contacto{
-        padding: 3rem 0.5rem;
-    }
 
     .contact-content h2{
         font-size: 2.4rem;

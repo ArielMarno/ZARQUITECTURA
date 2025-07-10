@@ -16,14 +16,14 @@ const Nosotros = () => {
                 <div className="contact_img">
                     <img data-aos="fade-up" src={zaq} alt="logo" />
                 </div>
-                <p className="responsive-text" data-aos="fade-down">Nos dedicamos al diseño arquitectónico y desarrollos inmobiliarios, creando soluciones innovadoras y eficientes que se adaptan a las necesidades de nuestros clientes.</p>
+                <p className="responsive-text" data-aos="fade-down">Somos un estudio de arquitectura especializado en el diseño y la construcción de espacios únicos. Nuestro enfoque principal es concebir cada proyecto como una obra de arte, donde cada detalle se piensa para generar nuevas sensaciones y experiencias. </p>
                 <a className="responsive-btn" href="https://wa.link/w4olxx">CONTACTO <img src={arrow} alt="flecha" /></a>
             </div>
             <div className="content">
-                <p data-aos="fade-down" className="destock-text">Nos dedicamos al diseño arquitectónico y desarrollos inmobiliarios, creando soluciones innovadoras y eficientes que se adaptan a las necesidades de nuestros clientes.</p>
+                <p data-aos="fade-down" className="destock-text">Somos un estudio de arquitectura especializado en el diseño y la construcción de espacios únicos. Nuestro enfoque principal es concebir cada proyecto como una obra de arte, donde cada detalle se piensa para generar nuevas sensaciones y experiencias.</p>
                 <div className="content_bottom">
                     <div content_bottom-container>
-                        <p data-aos="fade-up">Nuestro enfoque integral, desde la planificación hasta la ejecución, asegura resultados de alta calidad, optimizando cada etapa del proyecto.</p>
+                        <p data-aos="fade-up">Trabajamos capturando la morfología y el impacto visual, buscando que cada espacio no solo cumpla su función, sino que también deje una huella memorable en quienes lo habitan y lo observan. Creemos que la arquitectura es un lenguaje capaz de emocionar, transformar y perdurar en el tiempo.</p>
                     </div>
                     
                     <div className="content_img">

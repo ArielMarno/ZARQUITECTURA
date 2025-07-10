@@ -82,7 +82,7 @@
     font-size: clamp(1.2rem, 1.0099rem + 0.396vw, 1.5rem);
     font-weight: 600;
     color: var(--color-white);
-    padding-top: 1rem;
+    margin-bottom: 0.7rem;
 }
 
   .capa-content p{
@@ -100,7 +100,7 @@
 @media only screen and (max-width:1440px){
   
   .capa-content p{
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
@@ -128,5 +128,10 @@
 
   .proyectos .title h2{
     padding-top: 2rem;
+  }
+
+  .capa-content p{
+    max-width: 100%;
+    padding: 0.5rem;
   }
 }
