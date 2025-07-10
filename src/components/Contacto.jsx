@@ -47,7 +47,7 @@ const Contacto = () => {
             </form>
             <div className='contact-content'>
                 <h2 data-aos="fade-up">CONTACTO</h2>
-                <p data-aos="fade-down">Estamos a disposición para despejar cualquier duda que puedas tener o asesorarte sin cargo para comenzar a acompañarte en tu proyecto. </p>
+                <p data-aos="fade-down">Estamos a disposición para despejar cualquier duda que puedas tener o asesorarte para comenzar a acompañarte en tu proyecto. </p>
                 <div className='contact-content_icons'>
                     <div data-aos="fade-up" className='icon'>
                         <img src={phone} alt="teléfono" />
@@ -73,7 +73,7 @@ const Contacto = () => {
             </div>
         </div>
         <div className='contact-map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4029.7296033638577!2d-68.8242743!3d-32.9144079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095097de9a85%3A0x5d63cc2efae8b1c1!2sLa%20Barraca%20Mall!5e1!3m2!1ses!2sar!4v1752174564382!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4029.7296033638577!2d-68.8242743!3d-32.9144079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095097de9a85%3A0x5d63cc2efae8b1c1!2sLa%20Barraca%20Mall!5e1!3m2!1ses!2sar!4v1752174564382!5m2!1ses!2sar" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
             </div>
     </div>
   )

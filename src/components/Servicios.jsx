@@ -6,7 +6,7 @@ import edificio from "../assets/servicios.webp";
 
 const services = [
   { id: 1, name: 'DISEÑO ARQUITECTÓNICO PERSONALIZADO', description: 'Diseñamos espacios a medida que reflejan tu estilo y optimizan la funcionalidad, cuidando cada detalle estético.' },
-  { id: 2, name: 'MODELO 3D y RENDERS PROFESIONALES', description: 'Visualiza tu proyecto con precisión, gracias a imágenes en 3D que muestran cada aspecto antes de construir.' },
+  { id: 2, name: 'CONSTRUCCIÓN', description: 'Ejecutamos tu proyecto con la mejor mano de obra calificada y desarrollamos en BIM para evitar interferencias en obra.' },
   { id: 3, name: 'DESARROLLOS INMOBILIARIOS', description: 'Planificamos, diseñamos y gestionamos desarrollos inmobiliarios que maximizan el valor de tu inversión. Nos ocupamos de la ejecución completa, asegurando calidad y cumplimiento en cada etapa.' },
   { id: 4, name: 'CONSULTORÍA Y GESTIÓN INTEGRAL DE PROYECTOS', description: 'Nos encargamos de todo el proceso, desde la planificación hasta la ejecución, coordinando a los profesionales necesarios para que el resultado final sea impecable.' },
   { id: 5, name: 'REFORMAS y AMPLIACIONES', description: 'Renovamos y ampliamos espacios, creando soluciones que combinan modernización y eficiencia, siempre adaptadas a tus necesidades.' },

@@ -30,7 +30,7 @@
 }
 
 .banner-card p{
-    max-width: 50%;
+    max-width: 780px;
     text-align: center;
     font-family: var(--font-text);
     font-size: clamp(1.2rem, 1.0099rem + 0.396vw, 1.5rem);

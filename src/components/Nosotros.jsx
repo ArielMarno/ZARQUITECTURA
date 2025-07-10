@@ -16,14 +16,15 @@ const Nosotros = () => {
                 <div className="contact_img">
                     <img data-aos="fade-up" src={zaq} alt="logo" />
                 </div>
-                <p className="responsive-text" data-aos="fade-down">Somos un estudio de arquitectura especializado en el diseño y la construcción de espacios únicos. Nuestro enfoque principal es concebir cada proyecto como una obra de arte, donde cada detalle se piensa para generar nuevas sensaciones y experiencias. </p>
+                <p className="responsive-text" data-aos="fade-up">Trabajamos capturando la morfología y el impacto visual, buscando que cada espacio no solo cumpla su función, sino que también deje una huella memorable en quienes lo habitan y lo observan. Creemos que la arquitectura es un lenguaje capaz de emocionar, transformar y perdurar en el tiempo.</p>
                 <a className="responsive-btn" href="https://wa.link/w4olxx">CONTACTO <img src={arrow} alt="flecha" /></a>
             </div>
             <div className="content">
                 <p data-aos="fade-down" className="destock-text">Somos un estudio de arquitectura especializado en el diseño y la construcción de espacios únicos. Nuestro enfoque principal es concebir cada proyecto como una obra de arte, donde cada detalle se piensa para generar nuevas sensaciones y experiencias.</p>
                 <div className="content_bottom">
-                    <div content_bottom-container>
-                        <p data-aos="fade-up">Trabajamos capturando la morfología y el impacto visual, buscando que cada espacio no solo cumpla su función, sino que también deje una huella memorable en quienes lo habitan y lo observan. Creemos que la arquitectura es un lenguaje capaz de emocionar, transformar y perdurar en el tiempo.</p>
+                    <div className = "content_bottom-container">
+                        <p data-aos="fade-up" className="responsive-text">Somos un estudio de arquitectura especializado en el diseño y la construcción de espacios únicos. Nuestro enfoque principal es concebir cada proyecto como una obra de arte, donde cada detalle se piensa para generar nuevas sensaciones y experiencias.</p>
+                        <p data-aos="fade-up" className="destock-text">Trabajamos capturando la morfología y el impacto visual, buscando que cada espacio no solo cumpla su función, sino que también deje una huella memorable en quienes lo habitan y lo observan. Creemos que la arquitectura es un lenguaje capaz de emocionar, transformar y perdurar en el tiempo.</p>
                     </div>
                     
                     <div className="content_img">

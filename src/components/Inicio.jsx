@@ -22,9 +22,9 @@ const Inicio = () => {
         <div className='navbar'>
                 <a href="#"><img src={logo} alt="logo" /></a>
             <nav className={`links ${isOpen ? 'open' : ''}`}>
+                <a href="#proyectos" onClick={handleLinkClick}>PROYECTOS</a>
                 <a href="#nosotros" onClick={handleLinkClick}>NOSOTROS</a>
                 <a href="#servicios" onClick={handleLinkClick}>SERVICIOS</a>
-                <a href="#proyectos" onClick={handleLinkClick}>PROYECTOS</a>
                 <a href="#contacto" onClick={handleLinkClick}>CONTACTO</a>
             </nav>
             <div className="burguer">
@@ -33,7 +33,7 @@ const Inicio = () => {
         </div>
         <div className="title">
             <h1>ZARQUITECTURA</h1>
-            <p>LE DAMOS VIDA A TU VISIÓN</p>
+            <p>DISEÑAMOS TU VISIÓN</p>
         </div>
         <div className='btn-wsp_container'>
             <a className="btn-wsp" href="https://wa.link/w4olxx">
